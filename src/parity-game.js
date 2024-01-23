@@ -7,10 +7,8 @@ const getCorrectAnswer = (num) => {
   return 'no';
 };
 const gameProcess = (userName, count) => {
-  console.log('count', count);
   if (count === 3) {
-    console.log(`Congratulations, ${userName}!`);
-    return;
+    return `Congratulations, ${userName}!`;
   }
   console.log('Answer "yes" if the number is even, otherwise answer "no". ');
   const randomNumber = (Math.random() * 10 + 1).toFixed(0);
@@ -19,16 +17,15 @@ const gameProcess = (userName, count) => {
   const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
   if (correctAnswer === userAnswer) {
     console.log('Correct!');
-    gameProcess(userName, count + 1);
-  } else if (correctAnswer !== userAnswer) {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-    console.log(`Let's try again, ${userName}!`);
-    gameProcess(userName, 0);
+    return gameProcess(userName, count + 1);
   }
+  console.log(`'${userAnswer}' is wrong answer. Correct answer was '${correctAnswer}'.`);
+  console.log(`Let's try again, ${userName}!`);
+  return gameProcess(userName, 0);
 };
 const parityGame = (userName) => {
   console.log(`Hello ${userName}!`);
-  gameProcess(userName, 0);
+  return gameProcess(userName, 0);
 };
 
 export default parityGame;
