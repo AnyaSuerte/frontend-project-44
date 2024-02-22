@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync';
+import { getRandomNumber, gameProcess } from './index.js';
 
 const getCorrectAnswer = (num) => {
   if ((num % 2) === 0) {
@@ -6,26 +6,16 @@ const getCorrectAnswer = (num) => {
   }
   return 'no';
 };
-const gameProcess = (userName, count) => {
-  if (count === 3) {
-    return `Congratulations, ${userName}!`;
-  }
+const coreParity = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no". ');
-  const randomNumber = (Math.random() * 10 + 1).toFixed(0);
+  const randomNumber = getRandomNumber(1, 10);
   const correctAnswer = getCorrectAnswer(randomNumber);
   console.log(`Question: ${randomNumber}`);
-  const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
-  if (correctAnswer === userAnswer) {
-    console.log('Correct!');
-    return gameProcess(userName, count + 1);
-  }
-  console.log(`'${userAnswer}' is wrong answer. Correct answer was '${correctAnswer}'.`);
-  console.log(`Let's try again, ${userName}!`);
-  return gameProcess(userName, 0);
+  return Number(correctAnswer);
 };
 const parityGame = (userName) => {
   console.log(`Hello ${userName}!`);
-  return gameProcess(userName, 0);
+  return gameProcess(userName, 0, coreParity);
 };
 
 export default parityGame;
