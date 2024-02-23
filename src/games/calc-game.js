@@ -1,4 +1,4 @@
-import { gameProcess, getRandomNumber } from './index.js';
+import { gameProcess, getRandomNumber } from '../index.js';
 
 const getOperator = (randomNum) => {
   if (randomNum === 1) {

@@ -1,4 +1,4 @@
-import { getRandomNumber, gameProcess } from './index.js';
+import { getRandomNumber, gameProcess } from '../index.js';
 
 const getCorrectAnswer = (num) => {
   if ((num % 2) === 0) {
