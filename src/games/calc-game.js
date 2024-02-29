@@ -35,8 +35,6 @@ const coreCalc = () => {
   const operator = getOperator(randomNumberOfOperator);
   console.log(`${randomNumberOne} ${operator} ${randomNumberTwo}`);
   const correctAnswer = getCorrectAnswer(randomNumberOne, operator, randomNumberTwo);
-
-  console.log(correctAnswer);
   return String(correctAnswer);
 };
 
