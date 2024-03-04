@@ -8,6 +8,8 @@ games-calc:
 	node bin/brain-calc.js
 games-gcd:
 	node bin/brain-gcd.js
+games-progression:
+	node bin/brain-progression.js
 publish:
 	npm publish --dry-run	
 test-coverage:

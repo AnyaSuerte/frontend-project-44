@@ -15,7 +15,7 @@ const coreGcd = () => {
   const randomNumberOne = getRandomNumber(1, 100);
   const randomNumberTwo = getRandomNumber(1, 100);
   console.log('Find the greatest common divisor of given numbers:');
-  console.log(`${randomNumberOne} ${randomNumberTwo}`);
+  console.log(`Question: ${randomNumberOne} ${randomNumberTwo}`);
   const correctArrayOrder = [randomNumberOne, randomNumberTwo];
 
   correctArrayOrder.sort((a, b) => b - a);

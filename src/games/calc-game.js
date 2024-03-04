@@ -33,7 +33,7 @@ const coreCalc = () => {
   const randomNumberTwo = getRandomNumber(1, 10);
   const randomNumberOfOperator = getRandomNumber(1, 3);
   const operator = getOperator(randomNumberOfOperator);
-  console.log(`${randomNumberOne} ${operator} ${randomNumberTwo}`);
+  console.log(`Question: ${randomNumberOne} ${operator} ${randomNumberTwo}`);
   const correctAnswer = getCorrectAnswer(randomNumberOne, operator, randomNumberTwo);
   return String(correctAnswer);
 };
