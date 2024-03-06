@@ -10,6 +10,8 @@ games-gcd:
 	node bin/brain-gcd.js
 games-progression:
 	node bin/brain-progression.js
+games-prime:
+	node bin/brain-prime.js	
 publish:
 	npm publish --dry-run	
 test-coverage:

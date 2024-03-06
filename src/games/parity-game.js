@@ -11,7 +11,7 @@ const coreParity = () => {
   const randomNumber = getRandomNumber(1, 10);
   const correctAnswer = getCorrectAnswer(randomNumber);
   console.log(`Question: ${randomNumber}`);
-  return Number(correctAnswer);
+  return String(correctAnswer);
 };
 const parityGame = (userName) => {
   console.log(`Hello ${userName}!`);
