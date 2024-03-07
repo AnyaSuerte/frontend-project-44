@@ -13,7 +13,7 @@ export const gameProcess = (userName, count, core) => {
     console.log('Correct!');
     return (gameProcess(userName, count + 1, core));
   }
-  console.log(`'${userAnswer}' is wrong answer. Correct answer was '${correctAnswer}'.`);
+  console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
   console.log(`Let's try again, ${userName}!`);
   return (gameProcess(userName, count, core));
 };
