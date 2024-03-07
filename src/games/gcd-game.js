@@ -24,7 +24,7 @@ const coreGcd = () => {
 };
 
 const gcdGame = (userName) => {
-  console.log(`Hello ${userName}!`);
+  console.log(`Hello, ${userName}!`);
   return gameProcess(userName, 0, coreGcd);
 };
 export default gcdGame;

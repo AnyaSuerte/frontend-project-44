@@ -23,7 +23,7 @@ const coreProgression = () => {
 };
 
 const progressionGame = (userName) => {
-  console.log(`Hello ${userName}!`);
+  console.log(`Hello, ${userName}!`);
   return gameProcess(userName, 0, coreProgression);
 };
 export default progressionGame;

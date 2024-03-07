@@ -27,7 +27,7 @@ const corePrime = () => {
 };
 
 const primeGame = (userName) => {
-  console.log(`Hello ${userName}!`);
+  console.log(`Hello, ${userName}!`);
   return gameProcess(userName, 0, corePrime);
 };
 export default primeGame;

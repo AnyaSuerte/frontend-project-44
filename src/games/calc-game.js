@@ -39,7 +39,7 @@ const coreCalc = () => {
 };
 
 const calcGame = (userName) => {
-  console.log(`Hello ${userName}!`);
+  console.log(`Hello, ${userName}!`);
   return gameProcess(userName, 0, coreCalc);
 };
 export default calcGame;

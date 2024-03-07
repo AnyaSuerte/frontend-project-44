@@ -14,7 +14,7 @@ const coreParity = () => {
   return String(correctAnswer);
 };
 const parityGame = (userName) => {
-  console.log(`Hello ${userName}!`);
+  console.log(`Hello, ${userName}!`);
   return gameProcess(userName, 0, coreParity);
 };
 
