@@ -7,7 +7,7 @@ const getCorrectAnswer = (num) => {
   return 'no';
 };
 const coreParity = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no". ');
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   const randomNumber = getRandomNumber(1, 10);
   const correctAnswer = getCorrectAnswer(randomNumber);
   console.log(`Question: ${randomNumber}`);
