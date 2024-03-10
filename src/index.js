@@ -8,7 +8,7 @@ export const gameProcess = (userName, count, core) => {
     return `Congratulations, ${userName}!`;
   }
   const correctAnswer = core();
-  const userAnswer = String(readlineSync.question('Your answer: ').toLowerCase());
+  const userAnswer = String(readlineSync.question('Your answer:').toLowerCase());
   if (userAnswer === correctAnswer) {
     console.log('Correct!');
     return (gameProcess(userName, count + 1, core));
